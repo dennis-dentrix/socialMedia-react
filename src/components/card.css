@@ -1,0 +1,16 @@
+.card {
+  /* background-color: var(--color-black); */
+}
+.card-header {
+  color: var(--color-black);
+  font-size: 2rem;
+}
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.count {
+  color: var(--color-gray);
+  font-weight: 700;
+}

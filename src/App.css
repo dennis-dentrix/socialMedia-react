@@ -1,0 +1,18 @@
+:root {
+  --color-blue: #1da1f2;
+  --color-black: #14171a;
+  --color-gray: #657786;
+  --color-white: #e1e8ed;
+  --color-gray-light: #aab8c2;
+  --color-extra-light: #f5f8fa;
+}
+
+/* sections */
+.main {
+  /* background-color: var(--color-black); */
+  color: var(--color-black);
+  height: 100vh;
+}
+.header {
+  padding: 1.5rem 2rem;
+}
