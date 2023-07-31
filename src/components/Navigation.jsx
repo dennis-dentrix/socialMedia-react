@@ -16,7 +16,7 @@ export const Navigation = () => {
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="/explore">
               <Search className="nav-icon" />
               <span>Search</span>
             </Link>
