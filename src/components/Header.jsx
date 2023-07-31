@@ -7,7 +7,7 @@ export const Header = () => {
       <Avatar src={img} />
 
       <div className="header-pages">
-        <h1>For You</h1>
+        <h1 className="active" >For You</h1>
         <h1>Following</h1>
       </div>
     </section>

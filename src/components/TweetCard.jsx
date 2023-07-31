@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { TweetOptions } from "./TweetOptions";
 import profile from "../assets/profile-img.jpg";
 const message = [
@@ -18,29 +20,40 @@ import {
   CardMedia,
   CardContent,
   CardActions,
+  Drawer,
   Avatar,
   IconButton,
   Typography,
 } from "@mui/material";
 import { Chat, Heart, Repeat, ThreeDots, Share } from "react-bootstrap-icons";
+
 import "./card.css";
 
 export const TweetCard = () => {
+  const [drawer, setDrawer] = useState(false);
+
+  const handleOpenDrawer = () => setDrawer(true);
+  const handleCloseDrawer = () => setDrawer(false);
+
   return (
     <div className="tweet">
       <Card sx={{ maxWidth: "auto", fontSize: 16 }} className="card">
         <CardHeader
           avatar={<Avatar src={message.map((item) => item.profileImg)} />}
           action={
-            <IconButton aria-label="settings">
-              <ThreeDots
-                style={{
-                  color: "var(--color-gray)",
-                  fontSize: 20,
-                }}
-                onClick={TweetOptions}
-              />
-            </IconButton>
+            <>
+              <IconButton aria-label="settings" onClick={handleOpenDrawer}>
+                <ThreeDots
+                  style={{
+                    color: "var(--color-gray)",
+                    fontSize: 20,
+                  }}
+                />
+              </IconButton>
+              <Drawer anchor="bottom" open={drawer} onClose={handleCloseDrawer}>
+                {TweetOptions("bottom")}
+              </Drawer>
+            </>
           }
           title={message.map((item) => item.username)}
           subheader="September 14, 2016"

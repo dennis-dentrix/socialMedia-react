@@ -1,6 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  padding: 2rem 1.5rem 0;
   width: 100%;
   border-bottom: 1px solid var(--color-gray);
 }
@@ -9,4 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.active {
+  border-bottom: 2px solid var(--color-blue);
 }
