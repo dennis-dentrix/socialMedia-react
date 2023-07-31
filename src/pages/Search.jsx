@@ -47,7 +47,7 @@ function Topic() {
 
 function TopicCard() {
   return (
-    <div className="card">
+    <div className="search-card">
       <div className="card-text">
         <p className="card-about">Trending in Kenya</p>
         <h2 className="card-topic">2022 KCSE</h2>
