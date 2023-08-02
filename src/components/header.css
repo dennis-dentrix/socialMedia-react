@@ -4,13 +4,61 @@
   padding: 2rem 1.5rem 0;
   width: 100%;
   border-bottom: 1px solid var(--color-gray);
+  font-family: GFS Neohellenic;
 }
 .header-pages {
   margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 1px solid var(--color-gray);
 }
 .active {
   border-bottom: 2px solid var(--color-blue);
+}
+
+.header-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header-form__top {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.header-input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  font-family: GFS Neohellenic;
+  font-weight: 400;
+}
+
+.header-form__bottom {
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--color-blue);
+  font-size: 1.7rem;
+}
+
+.header-btn {
+  padding: 0.7rem 1.7rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-family: GFS Neohellenic;
+
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-size: 1.7rem;
 }
