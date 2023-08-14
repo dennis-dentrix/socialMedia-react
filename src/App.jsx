@@ -1,5 +1,5 @@
 import { AllRoutes } from "./AllRoutes/AllRoutes";
-import { Navigation } from "./components/Navigation";
+import { Navigation, Trending } from "./components/";
 import "./App.css";
 
 export default function App() {
@@ -7,6 +7,7 @@ export default function App() {
     <div className="app">
       <Navigation />
       <AllRoutes />
+      <Trending />
     </div>
   );
 }

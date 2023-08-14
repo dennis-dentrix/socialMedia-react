@@ -6,15 +6,34 @@
   border-bottom: 1px solid var(--color-gray);
   font-family: GFS Neohellenic;
 }
+.header-link {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.7rem;
+}
 .header-pages {
   margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px solid var(--color-gray);
+  border: 0 solid black;
+}
+.page {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: rgb(113, 118, 123);
+  font-weight: 500;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+.page:hover {
+  background-color: var(--color-dark-gray);
+  color: var(--color-white);
 }
 .active {
   border-bottom: 2px solid var(--color-blue);
+  color: var(--color-white);
 }
 
 .header-form {
@@ -36,6 +55,7 @@
   font-size: 1.6rem;
   font-family: GFS Neohellenic;
   font-weight: 400;
+  background: transparent;
 }
 
 .header-form__bottom {
@@ -52,7 +72,7 @@
   font-size: 1.7rem;
 }
 
-.header-btn {
+.btn {
   padding: 0.7rem 1.7rem;
   border-radius: 0.6rem;
   border: none;

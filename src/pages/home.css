@@ -1,0 +1,37 @@
+@media (min-width: 600px) {
+  .main {
+    position: absolute;
+    left: 18%;
+    border: 1px solid var(--color-extra-light);
+  }
+}
+@media (min-width: 992px) {
+  .home {
+    grid-column: 2 / 3;
+  }
+  .home-body {
+    display: block;
+  }
+  .trending {
+    grid-column: 3 / 4;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    grid-column: 2/ 3;
+    align-items: flex-start;
+    flex-grow: 1;
+    width: 80vw;
+    position: absolute;
+    left: 10rem;
+    overflow-y: hidden;
+    /* backface-visibility: hidden;
+    justify-content: space-between; */
+  }
+  .home-body {
+    /* display: block; */
+  }
+  .trending {
+    display: none;
+  }
+}

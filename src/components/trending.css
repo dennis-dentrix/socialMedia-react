@@ -1,0 +1,74 @@
+/* @media(max-width:768px) {
+
+} */
+
+.search-form {
+  border: 1px solid var(--color-gray);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  margin: 2rem;
+  border-radius: 0.9rem;
+}
+.search-icon {
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background: transparent;
+  color: var(--color-white);
+}
+
+.verify {
+  margin: 2rem;
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  border-radius: 0.9rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.verify-heading {
+  font-size: 1.6rem;
+}
+.verify-text {
+  font-size: 1.4rem;
+}
+
+.topics {
+  margin: 2rem;
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  border-radius: 0.9rem;
+}
+.topics__box {
+  cursor: pointer;
+  padding: 1rem 1.5em;
+}
+.topics__box:hover {
+  background-color: var(--color-gray-light);
+}
+.topics__title {
+  padding: 1rem 1.5rem;
+
+  font-size: 1.7rem;
+}
+.topics__box-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topics__box-text {
+  color: var(--color-extra-light);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.topics__box-topic {
+  font-size: 1.6rem;
+}

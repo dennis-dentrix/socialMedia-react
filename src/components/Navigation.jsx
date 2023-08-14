@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 import { Avatar } from "@mui/material";
-import { House, Search, Bell, Envelope } from "react-bootstrap-icons";
+import {
+  House,
+  Search,
+  Bell,
+  Envelope,
+  Person,
+  ThreeDots,
+} from "react-bootstrap-icons";
+import { Button } from "./Button";
 
 import "./nav.css";
 
@@ -38,7 +46,31 @@ export const Navigation = () => {
               <span>Messages</span>
             </Link>
           </li>
+
+          <li className="nav-item">
+            <Link className="nav-link" to="/">
+              <Person className="nav-icon" />
+              <span>Profile</span>
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link className="nav-link" to="/">
+              <ThreeDots className="nav-icon" />
+              <span>More</span>
+            </Link>
+          </li>
         </ul>
+
+        <Button
+          style={{
+            padding: "1.5rem 1rem",
+            borderRadius: "1rem",
+            fontSize: "1.6rem",
+          }}
+        >
+          Post
+        </Button>
       </nav>
     </section>
   );

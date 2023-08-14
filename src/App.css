@@ -1,8 +1,9 @@
 :root {
-  --color-blue: #1da1f2;
+  --color-white: #e7e9ea;
   --color-black: #14171a;
+  --color-blue: #1d9bf0;
+  --color-dark-gray: #71767b;
   --color-gray: #657786;
-  --color-white: #e1e8ed;
   --color-gray-light: #aab8c2;
   --color-extra-light: #f5f8fa;
 }
@@ -27,19 +28,25 @@ body {
   position: relative;
 
   height: 100vh;
+  background-color: var(--color-black);
 }
 
 /* sections */
-.main {
-  /* background-color: var(--color-black); */
+/* .main {
   color: var(--color-black);
   height: 100vh;
+} */
+
+@media (min-width: 992px) {
+  .app {
+    display: grid;
+    grid-template-columns: 20rem auto 30rem;
+  }
 }
 
-@media (min-width: 600px) {
-  .main {
-    position: absolute;
-    left: 18%;
-    border: 1px solid var(--color-extra-light);
+@media (max-width: 768px) {
+  .app {
+    display: grid;
+    grid-template-columns: 10rem auto;
   }
 }

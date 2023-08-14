@@ -1,16 +1,73 @@
 .card {
-  /* background-color: var(--color-black); */
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
 }
-.card-header {
-  color: var(--color-black);
-  font-size: 2rem;
+.card__box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
 }
-.card-actions {
+.card__header {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
 }
-.count {
-  color: var(--color-gray);
-  font-weight: 700;
+
+.card__header-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card__more {
+  color: var(--color-dark-gray);
+}
+
+.card__content {
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+.card__user {
+  color: var(--color-white);
+
+  font-size: 1.6rem;
+}
+
+.card__img {
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+.card__link {
+  text-decoration: none;
+  color: var(--color-dark-gray);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card__handle .card__time {
+  color: var(--color-dark-gray);
+  font-size: 1.4rem;
+  cursor: pointer;
+  flex-shrink: 1;
+}
+.card__handle:hover {
+  border-bottom: 1px solid var(--color-dark-gray);
+}
+
+.card__actions {
+  color: var(--color-dark-gray);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__actions-act {
+  font-size: 1.6rem;
+  list-style: none;
 }

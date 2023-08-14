@@ -1,18 +1,8 @@
 import { Avatar, Card, CardHeader, IconButton } from "@mui/material";
 import { Gear, ThreeDots, Search, XCircle } from "react-bootstrap-icons";
-import "./search.css";
+// import "./search.css";
 
-export const SearchPage = () => {
-  return (
-    <section className="search">
-      <SearchHeader />
-      <Topic />
-    </section>
-  );
-};
-
-// Child component
-function SearchHeader() {
+export function SearchHeader() {
   return (
     <div className="search-header">
       <Avatar />
@@ -31,6 +21,16 @@ function SearchHeader() {
     </div>
   );
 }
+export const SearchPage = () => {
+  return (
+    <section className="search">
+      <SearchHeader />
+      <Topic />
+    </section>
+  );
+};
+
+// Child component
 
 function Topic() {
   return (
